@@ -1,4 +1,5 @@
 ---
+import Header from '../components/Header.astro';
 import '../styles/global.css'
 // Interface - Similar to prop types in React
 // Add a '?' ('title?') to make it optional so that we do not get an error in whatever file uses 'Layout.astro' (e.g., 'index.astro'),
@@ -22,8 +23,9 @@ const { title = 'Astro Website' } = Astro.props as Props;
     <title>{title}</title>
   </head>
   <body>
-
-    <!-- 'slot' is needed for us to be able to have the content. -->
+    <Header />
+    
+    <!-- 'slot' is the output for out page. It is needed for us to be able to have the content. -->
     <slot />
   </body>
   </html>
