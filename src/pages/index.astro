@@ -1,6 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro';
+// import ShowcaseReact from '../components/ShowcaseReact';
+import Showcase from '../components/Showcase.astro';
 ---
+
 <Layout>
-	<h1>Hello</h1>
+  <!-- <ShowcaseReact /> -->
+  <Showcase showExtra={true} />
+  <h1>Hello</h1>
 </Layout>
