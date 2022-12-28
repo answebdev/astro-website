@@ -1,9 +1,10 @@
-import React,{useState} from 'react'
+import React, {useState} from 'react';
 
 function Showcase() {
-    const [name,setName]=useState('DEVO')
+  const [name,setName]=useState('DEVO');
+    
   return (
-    <div>Hello {name}</div>
+    <div>Hello {name}. Welcome to the React Showcase component.</div>
   )
 }
 
